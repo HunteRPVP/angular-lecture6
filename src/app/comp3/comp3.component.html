@@ -1,0 +1,20 @@
+<div [ngSwitch]="count">
+    <ng-template [ngSwitchCase] = "1"><p>1st of {{ count }}</p></ng-template>
+    <ng-template [ngSwitchCase] = "2"><p>2nd of {{ count }}</p></ng-template>
+    <ng-template [ngSwitchCase] = "3"><p>3rd of {{ count }}</p></ng-template>
+    <ng-template [ngSwitchCase] = "4"><p>4th of {{ count }}</p></ng-template>
+    <ng-template [ngSwitchCase] = "5"><p>5th of {{ count }}</p></ng-template>
+    <ng-template ngSwitchDefault><p>Default</p></ng-template>
+</div>
+
+<div [ngSwitch] = "count">
+    <span *ngSwitchCase = "1">1st of {{ count }}</span>
+    <span *ngSwitchCase = "2">2nd of {{ count }}</span>
+    <span *ngSwitchCase = "3">3rd of {{ count }}</span>
+    <span *ngSwitchCase = "4">4th of {{ count }}</span>
+    <span *ngSwitchCase = "5">5th of {{ count }}</span>
+    <span *ngSwitchDefault>Default</span>
+</div>
+
+<button type="button" (click)="increment()">+</button>
+<button type="button" (click)="decrement()">-</button>

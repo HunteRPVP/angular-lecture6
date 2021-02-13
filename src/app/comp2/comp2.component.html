@@ -1,0 +1,17 @@
+<ul>
+    <ng-template ngFor let-item [ngForOf]="items">
+        <li>{{ item }}</li>
+    </ng-template>
+</ul>
+
+<hr>
+
+<ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<hr>
+
+<ul>
+    <li *ngFor="let item of items; let i = index">{{ i + 1 }} {{ item }}</li>
+</ul>
